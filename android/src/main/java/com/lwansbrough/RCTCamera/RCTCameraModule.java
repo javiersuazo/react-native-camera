@@ -270,7 +270,7 @@ public class RCTCameraModule extends ReactContextBaseJavaModule
 
         // Create new MediaRecorder instance.
         mMediaRecorder = new MediaRecorder();
-
+        cm.videoBitRate = 1500000;
         // Attach callback to handle maxDuration (@see onInfo method in this file).
         mMediaRecorder.setOnInfoListener(this);
         // Attach error listener (@see onError method in this file).
